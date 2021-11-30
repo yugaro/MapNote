@@ -23,6 +23,13 @@ export default function SecondScreen(props) {
             navigation.navigate('Third');
           }}
         />
+        <SquareButton
+          label="to Map Screen"
+          style={{ backgroundColor: 'yellow' }}
+          onPress={() => {
+            navigation.navigate('Map');
+          }}
+        />
       </View>
     </View>
   );

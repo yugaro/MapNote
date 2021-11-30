@@ -5,6 +5,7 @@ import { CardStyleInterpolators } from '@react-navigation/stack';
 import FirstScreen from './src/screens/FirstScreen';
 import SecondScreen from './src/screens/SecondScreen';
 import ThirdScreen from './src/screens/ThirdScreen';
+import MapScreen from './src/screens/MapScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,7 +15,7 @@ export default function App() {
       <Stack.Navigator
         initialRouteName="Second"
         screenOptions={{
-          headerStyle: { backgroundColor: '#fdafde' },
+          headerStyle: { backgroundColor: '#35f3ff' },
           headerTitleStyle: { color: '#ffffff' },
           headerTintColor: '#ffffff',
           headerBackTitle: 'Back',
@@ -24,6 +25,7 @@ export default function App() {
         <Stack.Screen name="First" component={FirstScreen} />
         <Stack.Screen name="Second" component={SecondScreen} />
         <Stack.Screen name="Third" component={ThirdScreen} />
+        <Stack.Screen name="Map" component={MapScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

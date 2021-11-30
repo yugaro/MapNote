@@ -2,7 +2,6 @@ import React from 'react';
 import {
   StyleSheet, Text, View,
 } from 'react-native';
-
 import SquareButton from '../components/SquareButton';
 
 export default function FirstScreen(props) {
