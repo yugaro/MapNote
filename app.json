@@ -19,10 +19,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "jp.yugaro.mapnote",
-      "buildNumber": "1.0.0",
-      "config": {
-        "googleMapsApiKey": "AIzaSyDEMWjeDYgk-rjQdjlpbo4p5ZY5fJRM_2s"
-      }
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
