@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  View, Dimensions, StyleSheet, Alert,
+  View, Dimensions, StyleSheet, Text,
 } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
@@ -9,6 +9,7 @@ export default function MapScreen() {
     latitude: 35.681236,
     longitude: 139.767125,
   });
+
   return (
     <View style={styles.container}>
       <MapView
@@ -36,6 +37,14 @@ export default function MapScreen() {
           description="This is a marker example."
         />
       </MapView>
+      <View>
+        <Text>
+          {`Latitude: ${location.latitude}`}
+        </Text>
+        <Text>
+          {`Longitude: ${location.longitude}`}
+        </Text>
+      </View>
     </View>
   );
 }

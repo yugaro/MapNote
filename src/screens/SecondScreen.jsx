@@ -30,6 +30,13 @@ export default function SecondScreen(props) {
             navigation.navigate('Map');
           }}
         />
+        <SquareButton
+          label="to Geo Screen"
+          style={{ backgroundColor: 'magenta' }}
+          onPress={() => {
+            navigation.navigate('Geo');
+          }}
+        />
       </View>
     </View>
   );

@@ -6,6 +6,7 @@ import FirstScreen from './src/screens/FirstScreen';
 import SecondScreen from './src/screens/SecondScreen';
 import ThirdScreen from './src/screens/ThirdScreen';
 import MapScreen from './src/screens/MapScreen';
+import GeoScreen from './src/screens/GeoScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ export default function App() {
         <Stack.Screen name="Second" component={SecondScreen} />
         <Stack.Screen name="Third" component={ThirdScreen} />
         <Stack.Screen name="Map" component={MapScreen} />
+        <Stack.Screen name="Geo" component={GeoScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
