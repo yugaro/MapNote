@@ -23,7 +23,7 @@ export default function GeoScreen() {
   if (errorMsg) {
     text = errorMsg;
   } else if (location) {
-    text = JSON.stringify(location);
+    text = location.coords.latitude;
   }
 
   return (

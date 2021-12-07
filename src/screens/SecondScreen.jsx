@@ -37,6 +37,13 @@ export default function SecondScreen(props) {
             navigation.navigate('Geo');
           }}
         />
+        <SquareButton
+          label="to GeoMap Screen"
+          style={{ backgroundColor: 'blue' }}
+          onPress={() => {
+            navigation.navigate('GeoMap');
+          }}
+        />
       </View>
     </View>
   );
